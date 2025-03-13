@@ -1,0 +1,34 @@
+/* --------------- Fonts ---------------- */
+@font-face {
+    font-family: Retro;
+    src: url(./Fonts/retro-land-mayhem.ttf);
+    font-weight: 400, 300, 200, 100;
+    font-style: normal;
+    font-display: swap;
+}
+/* --------------- End of Fonts ---------------- */
+
+/* --------------- Variables ---------------- */
+:root {
+    --primary: #FFD166;
+    --secondary: #26547C;
+    --details-primary: #EF476F;
+    --details-secondary: #06D6A0;
+    --white: #FCFCFC;
+}
+/* --------------- End of Variables ---------------- */
+
+/* --------------- Body ---------------- */
+html, body {
+    /* removes horizontal scroll */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* --------------- End of Body ---------------- */
+
+/* ---------------  ---------------- */
+.main-heading {
+    color: var(--details-primary);
+    font-family: Retro;
+}
+/* ---------------  ---------------- */
