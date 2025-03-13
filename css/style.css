@@ -30,5 +30,10 @@ html, body {
 .main-heading {
     color: var(--details-primary);
     font-family: Retro;
+    font-size: 5rem;
+}
+.cube-section {
+    height: 777px;
 }
 /* ---------------  ---------------- */
+
