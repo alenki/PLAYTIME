@@ -46,12 +46,6 @@ html, body {
 .custom-navbar:hover {
   width: 30rem;
   transition: width .3s;
-  .contacts-button{
-    display: block;
-  }
-  .language-button{
-    display: block;
-  }
 }
 .home-menu-button {
   height: 2.5rem;
@@ -66,16 +60,12 @@ html, body {
   width: 5.5rem;
   border-radius: 4rem;
   background-color: red;
-
-  display: none;
 }
 .language-button {
   height: 2.5rem;
   width: 5.5rem;
   border-radius: 4rem;
   background-color: red;
-
-  display: none;
 }
 /* --------------- End of Navbar ---------------- */
 
