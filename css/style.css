@@ -33,7 +33,7 @@ html, body {
   position: fixed;
   bottom: 35px;
   left: 69px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 
   width: 15rem;
   height: 3.7rem;
@@ -44,33 +44,55 @@ html, body {
   color: white;
 }
 .custom-navbar:hover {
-  width: 30rem;
+  width: 27rem;
   transition: width .3s;
+  
+  .contacts-button {
+    transform: translate3d(200px, 0px, 0px);
+  }
+  .language-button {
+    transform: translate3d(300px, 0px, 0px);
+  }
 }
 .home-menu-button {
   height: 2.5rem;
-  width: 5.5rem;
+  width: 90.83px;
   border-radius: 4rem;
   background-color: red;
-
+  z-index: 100;
   display: block;
+  transform: translate3d(100px, 0px, 0px);
+  transition: transform .3s;
+  position: fixed;
 }
 .contacts-button {
   height: 2.5rem;
-  width: 5.5rem;
+  width: 90.83px;
   border-radius: 4rem;
   background-color: red;
+  transform: translate3d(100px, 0px, 0px);
+  transition: transform .3s;
+  position: fixed;
 }
 .language-button {
   height: 2.5rem;
-  width: 5.5rem;
+  width: 90.83px;
   border-radius: 4rem;
   background-color: red;
+  transform: translate3d(100px, 0px, 0px);
+  transition: transform .3s;
+  position: fixed;
+}
+.menu-text {
+  font-size: 
 }
 /* --------------- End of Navbar ---------------- */
 
 /* --------------- Hero ---------------- */
-.main-heading {
+.main_heading {
+  width: 100%;
+}
+.main-heading-text {
     color: var(--details-primary);
     font-family: Retro;
     font-size: 10rem;
@@ -116,10 +138,7 @@ html, body {
   
   h1 {  
     text-transform: uppercase;
-    font-size: 16vw; 
     text-align: center;
-    line-height: 1;
-    margin: 0;
     /* top: 50%; */
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
