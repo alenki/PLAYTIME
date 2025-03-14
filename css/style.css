@@ -61,6 +61,7 @@ html, body {
   background-color: red;
   z-index: 100;
   display: block;
+  cursor: pointer;
   transform: translate3d(100px, 0px, 0px);
   transition: transform .3s;
   position: fixed;
@@ -70,6 +71,7 @@ html, body {
   width: 90.83px;
   border-radius: 4rem;
   background-color: red;
+  cursor: pointer;
   transform: translate3d(100px, 0px, 0px);
   transition: transform .3s;
   position: fixed;
@@ -79,6 +81,7 @@ html, body {
   width: 90.83px;
   border-radius: 4rem;
   background-color: red;
+  cursor: pointer;
   transform: translate3d(100px, 0px, 0px);
   transition: transform .3s;
   position: fixed;
