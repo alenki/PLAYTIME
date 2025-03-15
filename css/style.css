@@ -127,7 +127,7 @@ h1 {
   z-index: 500;
   position: fixed;
   align-items: center;
-  top: 35px;
+  top: 7px;
   font-size: 1rem;
 
   width: 10rem;
@@ -292,7 +292,11 @@ h1 {
 }
 @media only screen and (max-width: 345px) {
   .custom-navbar{
+    bottom: 20px;
     left: 23px;
+  }
+  .custom-mobile-navbar{
+    top: 20px;
   }
   .custom-navbar:hover {
     left: 23px;
@@ -356,6 +360,10 @@ h1 {
 @media only screen and (max-width: 287px) {
   .custom-navbar{
     left: 3px;
+    bottom: 7px;
+  }
+  .custom-mobile-navbar{
+    top: 7px;
   }
   .custom-navbar:hover {
     left: 3px;
