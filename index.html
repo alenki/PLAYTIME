@@ -230,61 +230,6 @@ VANTA.NET({
           </div>
         </div>
       </div>
-        <div class="d-flex justify-content-center align-items-center">
-            <!-- <div class="cube-container">
-                <div class="cube">
-                  <div style="--x:-1; --y:0;">
-                    <span style="--i:3;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:1;"></span>
-                  </div>
-                  <div style="--x:0; --y:0;">
-                    <span style="--i:3;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:1;"></span>
-                  </div>
-                  <div style="--x:1; --y:0;">
-                    <span style="--i:3;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:1;"></span>
-                  </div>
-                </div>
-                <div class="cube">
-                  <div style="--x:-1; --y:0;">
-                    <span style="--i:3;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:1;"></span>
-                  </div>
-                  <div style="--x:0; --y:0;">
-                    <span style="--i:3;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:1;"></span>
-                  </div>
-                  <div style="--x:1; --y:0;">
-                    <span style="--i:3;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:1;"></span>
-                  </div>
-                </div>
-                <div class="cube">
-                  <div style="--x:-1; --y:0;">
-                    <span style="--i:3;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:1;"></span>
-                  </div>
-                  <div style="--x:0; --y:0;">
-                    <span style="--i:3;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:1;"></span>
-                  </div>
-                  <div style="--x:1; --y:0;">
-                    <span style="--i:3;"></span>
-                    <span style="--i:2;"></span>
-                    <span style="--i:1;"></span>
-                  </div>
-                </div>
-              </div> -->
-        </div>
     </div>
 </section>
 
@@ -298,9 +243,6 @@ VANTA.NET({
       </span>
      </h2>
   </div>
-  <!-- <div class="footer-end d-flex align-items-end justify-content-end">
-    89286912602
-  </div> -->
 </section>
 
   <!-- Contacts Modal -->
@@ -333,7 +275,47 @@ VANTA.NET({
     </div>
   </div>
 
+  <!-- Registration Modal -->
+  <div class="modal fade bd-example-modal-lg" id="registerModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="custom-modal-content modal-content">
+        <div class="custom-modal-header modal-header">
+            <h2 class="custom-modal-title modal-title fs-5" id="enrollLabel">Играть</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+        </div>
+        <div class="modal-body custom-registration-modal-body">
+          <!-- Форма -->
+          <form id="form">
+            <div class="mb-3">
+                <label for="name" class="col-form-label Russian">ФИО:</label>
+                <input type="text" class="form-control reqField" name="name" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="col-form-label Russian">Номер телефона:</label>
+                <input type="text" class="form-control reqField" name="phone" id="phone">
+            </div>
 
+            <!-- Институт -->
+            <span class="col-form-label Russian">Выбрать институт: </span>
+            <select class="form-select custom-form-select" aria-label="Default select example" name="institute" id="institute">
+              <option selected value="ИЭРиИИ">ИЭРиИИ</option>
+              <option value="ИМиЕН">ИМиЕН</option>
+              <option value="ИМТиИГ">ИМТиИГ</option>
+              <option value="ИСиЧЛХ">ИСиЧЛХ</option>
+              <option value="ИАСиД">ИАСиД</option>
+              <option value="СГИ">СГИ</option>
+              <option value="ИППиФСО">ИППиФСО</option>
+              <option value="ИПЭиФ">ИПЭиФ</option>
+              <option value="ВШМО">ВШМО</option>
+            </select>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn custom-submit disabled" id="submit" aria-disabled="true" tabindex="-1"><span class="submit-text">Продолжить</span></button>
+      </div>
+      </div>
+    </div>
+  </div>
 
 <!-- GSAP -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
@@ -344,6 +326,7 @@ VANTA.NET({
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- Custom JavaScript -->
 <script type="module" src="js/script.js"></script>
+<script type="module" src="js/form.js"></script>
 <script type="module" src="js/gsap_scroll.js"></script>
 <script type="module" src="js/typewrite_effect.js"></script>
 </body>

@@ -235,7 +235,6 @@ h1 {
   width: 1.75rem;
   height: 1.75rem;
   transition: transform .3s;
-  
 }
 .contact-main-button:hover {
   transform: scale(1.1);
@@ -341,53 +340,69 @@ h1 {
 .letsplay {
   padding-bottom: 5rem;
 }
+.col-form-label {
+  color: #FFD166;
+  font-size: 0.3rem;
+}
+.form-control {
+  height: 3rem !important;
+  border: 2.5px solid rgba(255, 255, 255, 0.43) !important;
+  box-shadow: 0 0 0 var(--secondary) !important;
+  border-radius: 13px !important;
+  background: rgba(255, 255, 255, 0.43) !important;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(7.3px) !important;
+  -webkit-backdrop-filter: blur(7.3px) !important;
+}
+.custom-form-select {
+  height: 3rem !important;
+  border: 2.5px solid rgba(255, 255, 255, 0.43) !important;
+  box-shadow: 0 0 0 var(--secondary) !important;
+  border-radius: 13px !important;
+  background: rgba(255, 255, 255, 0.43) !important;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(7.3px) !important;
+  -webkit-backdrop-filter: blur(7.3px) !important;
+}
+.custom-form-select:focus {
+  height: 3rem !important;
+  border: 2.5px solid rgba(255, 255, 255, 0.43) !important;
+  box-shadow: 0 0 0 var(--secondary) !important;
+  border-radius: 13px !important;
+  background: rgba(255, 255, 255, 0.43) !important;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(7.3px) !important;
+  -webkit-backdrop-filter: blur(7.3px) !important;
+}
+.modal-footer {
+  border-top: 0px !important;
+}
+.custom-submit {
+  height: 3rem !important;
+  width: 11rem !important;
+  transition: all .3s !important;
+
+  border-radius: 4rem !important;
+  background: rgba(38, 84, 124, 1) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(13.3px) !important;
+  -webkit-backdrop-filter: blur(13.3px) !important;
+  
+  color: white !important;
+  font-family: Joystix !important;
+  font-size: 1rem !important;
+}
+.custom-submit:hover {
+  transform: scale(1.03);
+}
+.successfull_registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* --------------- End of Registration ---------------- */
 
-/* --------------- footer text ---------------- */
-.typewrite-text-wrap {
-  font-size: 2.1rem;
-  color: var(--primary);
-  font-family: Joystix;
-  z-index: 10;
-	position: relative;
-}
-.footer-end {
-  height: 10.7vh;
-  padding-right: 69px;
-  z-index: 10;
-	position: relative;
-}
-/* --------------- End of footer text ---------------- */
-
-/* --------------- Contacts Modal ---------------- */
-.custom-modal-content {
-  border-radius: 30px !important;
-  background: rgba(239, 71, 111, 0.42) !important;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
-  backdrop-filter: blur(7px) !important;
-  -webkit-backdrop-filter: blur(7px) !important;
-}
-.custom-modal-header {
-  border-bottom: none !important;
-}
-.custom-modal-title {
-  font-size: 3rem !important;
-  color: var(--primary) !important;
-  font-family: Joystix !important;
-  transform: scaleY(1.13);
-}
-.contact-modal-text {
-  color: #FFD166;
-  font-size: 1rem;
-}
-/* --------------- End of Contacts Modal ---------------- */
-
-.cube-container {
-  padding-top: 12.5rem;
-}
-
-
-
+/* --------------- Registration Button ---------------- */
 .register-button {
   position: relative;
   padding: 12px 35px;
@@ -545,3 +560,43 @@ h1 {
 .fil0 {
   fill: #fffdef;
 }
+/* --------------- End of Register Button ---------------- */
+
+/* --------------- footer text ---------------- */
+.typewrite-text-wrap {
+  font-size: 2.1rem;
+  color: var(--primary);
+  font-family: Joystix;
+  z-index: 10;
+	position: relative;
+}
+.footer-end {
+  height: 10.7vh;
+  padding-right: 69px;
+  z-index: 10;
+	position: relative;
+}
+/* --------------- End of footer text ---------------- */
+
+/* --------------- Contacts Modal ---------------- */
+.custom-modal-content {
+  border-radius: 30px !important;
+  background: rgba(239, 71, 111, 0.42) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(7px) !important;
+  -webkit-backdrop-filter: blur(7px) !important;
+}
+.custom-modal-header {
+  border-bottom: none !important;
+}
+.custom-modal-title {
+  font-size: 3rem !important;
+  color: var(--primary) !important;
+  font-family: Joystix !important;
+  transform: scaleY(1.13);
+}
+.contact-modal-text {
+  color: #FFD166;
+  font-size: 1rem;
+}
+/* --------------- End of Contacts Modal ---------------- */
