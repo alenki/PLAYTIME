@@ -27,6 +27,20 @@ html, body {
 }
 /* --------------- End of Body ---------------- */
 
+/* --------------- Background ---------------- */
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+/* --------------- End of Background ---------------- */
+
 /* --------------- Navbar ---------------- */
 .custom-navbar {
   z-index: 500;
@@ -127,6 +141,8 @@ html, body {
     color: var(--details-primary);
     font-family: Retro;
     font-size: 10rem;
+    z-index: 10;
+    position: relative;
 }
 /* --------------- End of Hero ---------------- */
 
@@ -135,27 +151,42 @@ html, body {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
+  z-index: 10;
 	position: relative;
 }
 /* --------------- End of scrolltrigger text ---------------- */
 
-/* --------------- Hero ---------------- */
+/* --------------- Partners ---------------- */
 .partner-box {
   width: 95%;
   height: 20rem;
 
   background-color: gray;
   border-radius: 30px;
+
+  z-index: 10;
+	position: relative;
 }
-/* --------------- End of Hero ---------------- */
+/* --------------- End of Partners ---------------- */
+
+/* --------------- Registration ---------------- */
+.registration-button {
+  z-index: 10;
+	position: relative;
+}
+/* --------------- End of Registration ---------------- */
 
 /* --------------- footer text ---------------- */
 .typewrite-text-wrap {
   font-size: 2rem;
+  z-index: 10;
+	position: relative;
 }
 .footer-end {
   height: 10.7vh;
   padding-right: 69px;
+  z-index: 10;
+	position: relative;
 }
 /* --------------- End of footer text ---------------- */
 
