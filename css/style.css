@@ -6,6 +6,13 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+  font-family: Joystix;
+  src: url(./Fonts/joystix_monospace.otf);
+  font-weight: 400, 300, 200, 100;
+  font-style: normal;
+  font-display: swap;
+}
 /* --------------- End of Fonts ---------------- */
 
 /* --------------- Variables ---------------- */
@@ -49,44 +56,55 @@ html, body {
   left: 69px;
   font-size: 1rem;
 
-  width: 15rem;
+  width: 16.5rem;
   height: 3.7rem;
-  background-color: black;
   border-radius: 3rem;
   transition: width .3s;
 
-  color: white;
+  background: rgba(239, 71, 111, 0.42);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(239, 71, 111, 0.25);
+
+  color: whitesmoke;
+  font-size: 1.1rem;
+  font-family: Retro;
 }
 .custom-navbar:hover {
-  width: 27rem;
+  width: 30rem;
   transition: width .3s;
   
   .contacts-button {
-    transform: translate3d(200px, 0px, 0px);
+    transform: translate3d(240px, 0px, 0px);
   }
   .language-button {
-    transform: translate3d(300px, 0px, 0px);
+    transform: translate3d(350px, 0px, 0px);
   }
 }
 .home-menu-button {
   height: 2.5rem;
   width: 90.83px;
-  border-radius: 4rem;
-  background-color: red;
   z-index: 100;
   display: block;
   cursor: pointer;
-  transform: translate3d(100px, 0px, 0px);
+  transform: translate3d(130px, 0px, 0px);
   transition: transform .3s;
   position: fixed;
+
+  border-radius: 4rem;
+  background: rgba(38, 84, 124, 1);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(13.3px);
+-webkit-backdrop-filter: blur(13.3px);
 }
 .contacts-button {
   height: 2.5rem;
   width: 90.83px;
   border-radius: 4rem;
-  background-color: red;
+  /* background-color: red; */
   cursor: pointer;
-  transform: translate3d(100px, 0px, 0px);
+  transform: translate3d(130px, 0px, 0px);
   transition: transform .3s;
   position: fixed;
 }
@@ -94,11 +112,20 @@ html, body {
   height: 2.5rem;
   width: 90.83px;
   border-radius: 4rem;
-  background-color: red;
+  /* background-color: red; */
   cursor: pointer;
-  transform: translate3d(100px, 0px, 0px);
+  transform: translate3d(130px, 0px, 0px);
   transition: transform .3s;
   position: fixed;
+}
+.menu-text {
+  /* padding-top: 5px; */
+  font-family: Joystix;
+  font-size: 0.79rem;
+  transform: scaleY(1.13);
+}
+.menu-heading {
+  transform: scaleY(1.03);
 }
 /* --------------- End of Navbar ---------------- */
 
