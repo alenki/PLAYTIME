@@ -32,6 +32,14 @@ html, body {
     overflow-x: initial !important;
     background: var(--white);
 }
+.Retro {
+  font-family: Retro;
+  transform: scaleY(1);
+}
+.Russian {
+  font-family: Joystix;
+  transform: scaleY(1.13);
+}
 /* --------------- End of Body ---------------- */
 
 /* --------------- Background ---------------- */
@@ -241,7 +249,8 @@ h1 {
   width: 100%;
 }
 .main-heading-text {
-    color: rgba(239, 71, 111, 0.42);
+    /* color: rgba(239, 71, 111, 0.42); */
+    color: var(--primary);
     font-family: Retro;
     font-size: 13rem;
     z-index: 10;
@@ -320,7 +329,28 @@ h1 {
 }
 /* --------------- End of footer text ---------------- */
 
-
+/* --------------- Contacts Modal ---------------- */
+.custom-modal-content {
+  border-radius: 30px !important;
+  background: rgba(239, 71, 111, 0.42) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(7px) !important;
+  -webkit-backdrop-filter: blur(7px) !important;
+}
+.custom-modal-header {
+  border-bottom: none !important;
+}
+.custom-modal-title {
+  font-size: 3rem !important;
+  color: var(--primary) !important;
+  font-family: Joystix !important;
+  transform: scaleY(1.13);
+}
+.contact-modal-text {
+  color: #FFD166;
+  font-size: 1rem;
+}
+/* --------------- End of Contacts Modal ---------------- */
 
 .cube-container {
   padding-top: 12.5rem;
