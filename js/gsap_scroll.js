@@ -50,7 +50,6 @@ const scroll = () => {
                 pin: title.parentNode,
             }
         });
-
     });
 }
 

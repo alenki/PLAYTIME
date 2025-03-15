@@ -189,14 +189,15 @@ h1 {
   transition: transform .3s;
   position: fixed;
 }
+.menu-heading {
+  transform: scaleY(1.03);
+}
 .menu-text {
   /* padding-top: 5px; */
   font-family: Joystix;
   font-size: 0.79rem;
   transform: scaleY(1.13);
-}
-.menu-heading {
-  transform: scaleY(1.03);
+  transition: font-size .1s;
 }
 /* --------------- End of Navbar ---------------- */
 
@@ -260,9 +261,20 @@ h1 {
 /* --------------- End of scrolltrigger text ---------------- */
 
 /* --------------- Partners ---------------- */
+.partner-heading-text {
+  font-size: 3rem;
+  color: var(--primary);
+  font-family: Joystix;
+
+  padding-bottom: 23px;
+  padding-left: 23px;
+
+  z-index: 10;
+  position: relative;
+}
 .partner-section {
   height: 100vh;
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
 .partner-box {
   width: 95%;
@@ -282,6 +294,7 @@ h1 {
   width: 13rem;
   height: 13rem;
 }
+
 /* --------------- End of Partners ---------------- */
 
 /* --------------- Registration ---------------- */
