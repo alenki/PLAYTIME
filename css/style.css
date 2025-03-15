@@ -240,7 +240,7 @@ h1 {
   width: 100%;
 }
 .main-heading-text {
-    color: rgba(239, 71, 111, 0.42);;
+    color: rgba(239, 71, 111, 0.42);
     font-family: Retro;
     font-size: 13rem;
     z-index: 10;
@@ -249,12 +249,13 @@ h1 {
 /* --------------- End of Hero ---------------- */
 
 /* --------------- scrolltrigger text ---------------- */
-.scroll-text_content {
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
-  z-index: 10;
-	position: relative;
+/* .scroll-text_content {
+
+} */
+.content__title {
+	font-size: 2.1rem;
+  color: var(--primary);
+  font-family: Joystix;
 }
 /* --------------- End of scrolltrigger text ---------------- */
 

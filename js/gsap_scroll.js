@@ -54,9 +54,8 @@ const scroll = () => {
     });
 }
 
-window.addEventListener('load', () => {
-    // GSAP Scroll Triggers
-    scroll();
-    // Lenis (smooth scrolling)
-    initSmoothScrolling();
-})
+// Lenis (smooth scrolling)
+initSmoothScrolling();
+// GSAP Scroll Triggers
+scroll();
+
