@@ -22,7 +22,7 @@
 html, body {
     /* removes horizontal scroll */
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: initial !important;
     background: var(--white);
 }
 /* --------------- End of Body ---------------- */
@@ -110,6 +110,15 @@ html, body {
 	position: relative;
 }
 /* --------------- End of scrolltrigger text ---------------- */
+
+
+/* --------------- footer text ---------------- */
+.typewrite-text-wrap {
+  font-size: 2rem;
+
+}
+/* --------------- End of footer text ---------------- */
+
 
 .cube-section {
   height: 100vh;
