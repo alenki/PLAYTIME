@@ -5,9 +5,29 @@ import Splitting from "splitting";
 gsap.registerPlugin(ScrollTrigger);
 Splitting();
 
-const fx16Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect16]')];
-const fx17Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect17]')];
 const fx25Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect25]')];
+
+// Lenis smooth scrolling
+let lenis;
+
+// Initialize Lenis smooth scrolling
+const initSmoothScrolling = () => {
+	
+    lenis = new Lenis({
+		lerp: 0.2,
+		smooth: true
+	});
+
+    lenis.on('scroll', () => ScrollTrigger.update());
+
+	const scrollFn = (time) => {
+		lenis.raf(time);
+		requestAnimationFrame(scrollFn);
+	};
+	
+    requestAnimationFrame(scrollFn);
+
+};
 
 // GSAP Scroll Triggers
 const scroll = () => {
@@ -37,4 +57,6 @@ const scroll = () => {
 window.addEventListener('load', () => {
     // GSAP Scroll Triggers
     scroll();
+    // Lenis (smooth scrolling)
+    initSmoothScrolling();
 })
