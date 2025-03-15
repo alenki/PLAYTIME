@@ -48,6 +48,71 @@ html, body {
 }
 /* --------------- End of Background ---------------- */
 
+/* --------------- Heading Text ---------------- */
+:root {
+  --green: #26547C;
+  --blue: #4ad9db;
+  --red: #f98ca4;
+  --orange: #f5b10b;
+  --mustard: #26547C;
+  --darkblue: #2f3e9c;
+  --darkred: #9e132c;
+  --purple: #6e1f58;
+  --outline: 2px;
+}
+
+h1 {  
+  text-transform: uppercase;
+  text-align: center;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* position: absolute; */
+  color: var(--red);
+  text-shadow: 
+      -1px -1px 0 var(--purple), 1px -1px 0 var(--purple), -1px 1px 0 var(--purple), 1px 1px 0 var(--purple), 
+      1px 0px 0px var(--green), 0px 1px 0px var(--green), 2px 1px 0px var(--green), 1px 2px 0px var(--green), 3px 2px 0px var(--green), 2px 3px 0px var(--green), 4px 3px 0px var(--green), 3px 4px 0px var(--green), 5px 4px 0px var(--green),
+      3px 5px 0px var(--purple), 6px 5px 0px var(--purple), 
+      -1px 2px 0 black, 0 3px 0 var(--purple), 1px 4px 0 var(--purple), 2px 5px 0px var(--purple),
+      2px -1px 0 var(--purple), 3px 0 0 var(--purple), 4px 1px 0 var(--purple), 5px 2px 0px var(--purple), 6px 3px 0 var(--purple), 7px 4px 0 var(--purple),
+    10px 10px 4px var(--mustard);
+  
+  &:after,
+  &:before {
+    content: attr(data-heading);
+    position: absolute;
+    overflow: hidden;
+    left: 0;    
+    width: 100%;
+    top: 0;
+    z-index: 5;
+  }
+  
+  &::before {
+    text-shadow: 
+      -1px -1px 0 var(--darkred), 1px -1px 0 var(--darkred), -1px 1px 0 var(--darkred), 1px 1px 0 var(--darkred), 
+      1px 0px 0px var(--orange), 0px 1px 0px var(--orange), 2px 1px 0px var(--orange), 1px 2px 0px var(--orange), 3px 2px 0px var(--orange), 2px 3px 0px var(--orange), 4px 3px 0px var(--orange), 3px 4px 0px var(--orange), 5px 4px 0px var(--orange),
+      3px 5px 0px var(--darkred), 6px 5px 0px var(--darkred), 
+      -1px 2px 0 black, 0 3px 0 var(--darkred), 1px 4px 0 var(--darkred), 2px 5px 0px var(--darkred),
+      2px -1px 0 var(--darkred), 3px 0 0 var(--darkred), 4px 1px 0 var(--darkred), 5px 2px 0px var(--darkred), 6px 3px 0 var(--darkred), 7px 4px 0 var(--darkred),
+      10px 10px 4px rgba(#6af177, .8);
+    color: var(--green);
+    height: 66%;
+  }
+  
+  &::after {
+    height: 33%;
+    color: var(--blue);
+    text-shadow: 
+      -1px -1px 0 var(--darkblue), 1px -1px 0 var(--darkblue), -1px 1px 0 var(--darkblue), 1px 1px 0 var(--darkblue),
+      1px 0px 0px var(--red), 0px 1px 0px var(--red), 2px 1px 0px var(--red), 1px 2px 0px var(--red), 3px 2px 0px var(--red), 2px 3px 0px var(--red), 4px 3px 0px var(--red), 3px 4px 0px var(--red), 5px 4px 0px var(--red),
+      3px 5px 0px var(--darkblue), 6px 5px 0px var(--darkblue), 
+      -1px 2px 0 black, 0 3px 0 var(--darkblue), 1px 4px 0 var(--darkblue), 2px 5px 0px var(--darkblue),
+      2px -1px 0 var(--darkblue), 3px 0 0 var(--darkblue), 4px 1px 0 var(--darkblue), 5px 2px 0px var(--darkblue), 6px 3px 0 var(--darkblue), 7px 4px 0 var(--darkblue);
+  }
+}
+/* --------------- End of Heading Text ---------------- */
+
 /* --------------- Navbar ---------------- */
 .custom-navbar {
   z-index: 500;
@@ -175,9 +240,9 @@ html, body {
   width: 100%;
 }
 .main-heading-text {
-    color: var(--details-primary);
+    color: rgba(239, 71, 111, 0.42);;
     font-family: Retro;
-    font-size: 10rem;
+    font-size: 13rem;
     z-index: 10;
     position: relative;
 }
@@ -194,15 +259,27 @@ html, body {
 /* --------------- End of scrolltrigger text ---------------- */
 
 /* --------------- Partners ---------------- */
+.partner-section {
+  height: 100vh;
+  padding-top: 15rem;
+}
 .partner-box {
   width: 95%;
   height: 20rem;
 
-  background-color: gray;
-  border-radius: 30px;
-
   z-index: 10;
 	position: relative;
+
+  border-radius: 30px;
+  background: rgba(239, 71, 111, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+.partner-logo {
+  background-color: black;
+  width: 13rem;
+  height: 13rem;
 }
 /* --------------- End of Partners ---------------- */
 
@@ -228,10 +305,7 @@ html, body {
 /* --------------- End of footer text ---------------- */
 
 
-.cube-section {
-  height: 100vh;
-  padding-top: 15rem;
-}
+
 .cube-container {
   padding-top: 12.5rem;
 }
@@ -245,65 +319,3 @@ html, body {
     padding-top: 151px;
 }
 
-:root {
-    --green: #65f283;
-    --blue: #4ad9db;
-    --red: #f98ca4;
-    --orange: #f5b10b;
-    --mustard: #dac249;
-    --darkblue: #2f3e9c;
-    --darkred: #9e132c;
-    --purple: #6e1f58;
-    --outline: 2px;
-  }
-  
-  h1 {  
-    text-transform: uppercase;
-    text-align: center;
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* position: absolute; */
-    color: var(--red);
-    text-shadow: 
-        -1px -1px 0 var(--purple), 1px -1px 0 var(--purple), -1px 1px 0 var(--purple), 1px 1px 0 var(--purple), 
-        1px 0px 0px var(--green), 0px 1px 0px var(--green), 2px 1px 0px var(--green), 1px 2px 0px var(--green), 3px 2px 0px var(--green), 2px 3px 0px var(--green), 4px 3px 0px var(--green), 3px 4px 0px var(--green), 5px 4px 0px var(--green),
-        3px 5px 0px var(--purple), 6px 5px 0px var(--purple), 
-        -1px 2px 0 black, 0 3px 0 var(--purple), 1px 4px 0 var(--purple), 2px 5px 0px var(--purple),
-        2px -1px 0 var(--purple), 3px 0 0 var(--purple), 4px 1px 0 var(--purple), 5px 2px 0px var(--purple), 6px 3px 0 var(--purple), 7px 4px 0 var(--purple),
-      10px 10px 4px var(--mustard);
-    
-    &:after,
-    &:before {
-      content: attr(data-heading);
-      position: absolute;
-      overflow: hidden;
-      left: 0;    
-      width: 100%;
-      top: 0;
-      z-index: 5;
-    }
-    
-    &::before {
-      text-shadow: 
-        -1px -1px 0 var(--darkred), 1px -1px 0 var(--darkred), -1px 1px 0 var(--darkred), 1px 1px 0 var(--darkred), 
-        1px 0px 0px var(--orange), 0px 1px 0px var(--orange), 2px 1px 0px var(--orange), 1px 2px 0px var(--orange), 3px 2px 0px var(--orange), 2px 3px 0px var(--orange), 4px 3px 0px var(--orange), 3px 4px 0px var(--orange), 5px 4px 0px var(--orange),
-        3px 5px 0px var(--darkred), 6px 5px 0px var(--darkred), 
-        -1px 2px 0 black, 0 3px 0 var(--darkred), 1px 4px 0 var(--darkred), 2px 5px 0px var(--darkred),
-        2px -1px 0 var(--darkred), 3px 0 0 var(--darkred), 4px 1px 0 var(--darkred), 5px 2px 0px var(--darkred), 6px 3px 0 var(--darkred), 7px 4px 0 var(--darkred),
-        10px 10px 4px rgba(#6af177, .8);
-      color: var(--green);
-      height: 66%;
-    }
-    
-    &::after {
-      height: 33%;
-      color: var(--blue);
-      text-shadow: 
-        -1px -1px 0 var(--darkblue), 1px -1px 0 var(--darkblue), -1px 1px 0 var(--darkblue), 1px 1px 0 var(--darkblue),
-        1px 0px 0px var(--red), 0px 1px 0px var(--red), 2px 1px 0px var(--red), 1px 2px 0px var(--red), 3px 2px 0px var(--red), 2px 3px 0px var(--red), 4px 3px 0px var(--red), 3px 4px 0px var(--red), 5px 4px 0px var(--red),
-        3px 5px 0px var(--darkblue), 6px 5px 0px var(--darkblue), 
-        -1px 2px 0 black, 0 3px 0 var(--darkblue), 1px 4px 0 var(--darkblue), 2px 5px 0px var(--darkblue),
-        2px -1px 0 var(--darkblue), 3px 0 0 var(--darkblue), 4px 1px 0 var(--darkblue), 5px 2px 0px var(--darkblue), 6px 3px 0 var(--darkblue), 7px 4px 0 var(--darkblue);
-    }
-  }
