@@ -16,9 +16,11 @@
 <body>
 
 <!-- Background -->
-<video id="background-video" autoplay loop muted poster=""> <!-- In poster write the photo that should load if video not loaded -->
+<video class="video" id="background-video" autoplay loop muted playsinline poster=""> <!-- In poster write the photo that should load if video not loaded -->
   <source src="/Media/background.mp4" type="video/mp4">
 </video>
+<!-- Safari background -->
+<div class="video video-safari">
 
 <!-- navbar -->
 <div class="custom-navbar">
@@ -226,7 +228,7 @@
         <div class="col-sm-4 d-flex justify-content-center">
           <div class="partner-box d-flex justify-content-center align-items-center flex-column">
             <a href="https://t.me/xAlenki" class="partner-logo" target="__blank">
-              <video autoplay loop muted poster="KARAF">
+              <video class="video" autoplay loop muted poster="KARAF">
                 <source src="/Media/karaf.mp4" type="video/mp4">
               </video>
             </a>
