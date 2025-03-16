@@ -608,18 +608,23 @@ h1 {
   font-family: Joystix;
 
   padding-bottom: 23px;
-  padding-left: 23px;
 
   z-index: 10;
   position: relative;
 }
+@media only screen and (max-width: 500px) {
+  .partner-heading-text{
+    font-size: 8.5vw;
+  }
+}
 .partner-section {
   height: 100vh;
   padding-top: 10rem;
+  padding-bottom: 50rem;
 }
 .partner-box {
-  width: 95%;
-  height: 20rem;
+  width: 95vw;
+  height: 30vw;
 
   z-index: 10;
 	position: relative;
@@ -632,10 +637,37 @@ h1 {
 }
 .partner-logo {
   background-color: black;
-  width: 13rem;
-  height: 13rem;
+  /* width: 59%;
+  height: 63%; */
+  width: 16vw;
+  height: 16vw;
   border-radius: 30px;
   transition: transform .3s;
+}
+@media only screen and (max-width: 575px) {
+  .partner-box {
+    width: 55vw;
+    height: 55vw;
+    margin-bottom: 2rem;
+  }
+  .partner-logo {
+    width: 30vw;
+    height: 30vw;
+  }
+  .partner-section {
+    height: auto;
+    padding-bottom: 6rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .partner-box {
+    width: 67vw;
+    height: 67vw;
+  }
+  .partner-logo {
+    width: 35vw;
+    height: 35vw;
+  }
 }
 .partner-logo img {
   width: 100%;
