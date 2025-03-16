@@ -1,31 +1,20 @@
 {
   "name": "playtime",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/alenki/PLAYTIME#readme",
-  "bugs": {
-    "url": "https://github.com/alenki/PLAYTIME/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alenki/PLAYTIME.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "vite",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "gsap": "^3.12.7",
     "lenis": "^1.2.3",
-    "splitting": "^1.1.0",
-    "vite": "^6.2.2"
+    "splitting": "^1.1.0"
   }
 }
