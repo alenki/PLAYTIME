@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAYTIME</title>
+    <link rel="icon" href="Media\favicon.png">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cube.css">
+    <!-- Import SASS Bootstrap -->
+    <link href="/css/BootstrapSASS.css" rel="stylesheet">  
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+
+<!-- Background -->
+<video id="background-video" autoplay loop muted poster=""> <!-- In poster write the photo that should load if video not loaded -->
+  <source src="Media\background.mp4" type="video/mp4">
+</video>
+
+<!-- navbar -->
+<div class="custom-navbar">
+  <div style="width: 100px;" class="pb-1"><a href="#" class="menu-heading">PLAYTIME</a></div>
+  <a href="#" class="home-menu-button ms-3 align-items-center justify-content-center pb-1 pe-1"><span href="#home" class="menu-text home-menu-text">Home</span></a>
+  <div class="contacts-button ms-3 align-items-center justify-content-center pb-1 pe-1"><span class="menu-text contacts-menu-text">Contacts</span></div>
+  <div class="language-button ms-3 align-items-center justify-content-center pb-1 pe-1"><span class="menu-text language-menu-text">Русский</span></div>
+</div>
+<!-- Mobile second navbar -->
+<div class="custom-mobile-navbar">
+  <div class="contacts-mobile-button ms-3 d-flex align-items-center justify-content-center pb-1 pe-1"><span class="menu-text contacts-menu-text">Contacts</span></div>
+  <div class="language-mobile-button ms-3 d-flex align-items-center justify-content-center pb-1 pe-1"><span class="menu-text language-menu-text">Русский</span></div>
+</div>
+<!-- Mobile third navbar -->
+<div class="section d-flex justify-content-center">
+  <div class="custom-mobile3-navbar flex-column">
+    <div class="contacts-mobile3-button align-items-center justify-content-center pt-1"><span class="menu-text contacts-menu-text">Contacts</span></div>
+    <div class="language-mobile3-button align-items-center justify-content-center pt-2"><span class="menu-text language-menu-text">Русский</span></div>
+  </div>
+</div>
+
+<!-- Contacts button -->
+<div class="contact-main-button align-items-center justify-content-center">
+  <div class="contact-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#26547c" d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4c26.5 9.6 56.2 15.1 87.8 15.1c124.7 0 208-80.5 208-160s-83.3-160-208-160S48 160.5 48 240c0 32 12.4 62.8 35.7 89.2c8.6 9.7 12.8 22.5 11.8 35.5c-1.4 18.1-5.7 34.7-11.3 49.4c17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208s-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6c-15.1 6.6-32.3 12.6-50.1 16.1c-.8 .2-1.6 .3-2.4 .5c-4.4 .8-8.7 1.5-13.2 1.9c-.2 0-.5 .1-.7 .1c-5.1 .5-10.2 .8-15.3 .8c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4c4.1-4.2 7.8-8.7 11.3-13.5c1.7-2.3 3.3-4.6 4.8-6.9l.3-.5z"/></svg>
+  </div>
+</div>
+
+<!-- Hero -->
+<section style="height: 100vh;" class="d-flex justify-content-center align-items-center">
+    <div class="main-heading"><h1 class="pb-5 main-heading-text">PLAYTIME</h1></div>
+</section>
+
+<!-- About section -->
+<section class="d-flex justify-content-center">
+  <div class="">
+    <!-- Маленькие экраны -->
+    <div class="scroll-text-mobile_content">
+      <h2 class="content__title text-center content__title--left" data-splitting data-effect25>
+        <span class="small-screen-scroll-text text-center font-13 font-medium font-height-medium">
+          Open student olimpiad on algorithms and data structures<br><br>
+          And let it guide you through the dark.<br><br>
+          For it's the well of emotions deep,<br><br>
+          That helps you laugh, love, and sleep.<br><br>
+        </span>
+      </h2>
+    </div>
+    <!-- Большие экраны -->
+    <div class="scroll-text-large_content">
+      <h2 class="content__title content__title--left" data-splitting data-effect25>
+        <span class="large-screen-scroll-text font-13 font-medium font-height-medium">
+          Open student olimpiad on algorithms and data structures<br>
+          And let it guide you through the dark.<br>
+          For it's the well of emotions deep,<br>
+          That helps you laugh, love, and sleep.<br>
+        </span>
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- Registration section -->
+<section style="height: 100vh;" class="d-flex justify-content-center align-items-center flex-column">
+  <h1 class="letsplay main-heading-text">LET'S<br>PLAY?</h1>
+  <button class="register-button">
+    PLAY
+    <div class="star-1">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xml:space="preserve"
+        version="1.1"
+        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+        viewBox="0 0 784.11 815.53"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs></defs>
+        <g id="Layer_x0020_1">
+          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+          <path
+            class="fil0"
+            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <div class="star-2">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xml:space="preserve"
+        version="1.1"
+        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+        viewBox="0 0 784.11 815.53"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs></defs>
+        <g id="Layer_x0020_1">
+          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+          <path
+            class="fil0"
+            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <div class="star-3">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xml:space="preserve"
+        version="1.1"
+        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+        viewBox="0 0 784.11 815.53"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs></defs>
+        <g id="Layer_x0020_1">
+          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+          <path
+            class="fil0"
+            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <div class="star-4">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xml:space="preserve"
+        version="1.1"
+        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+        viewBox="0 0 784.11 815.53"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs></defs>
+        <g id="Layer_x0020_1">
+          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+          <path
+            class="fil0"
+            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <div class="star-5">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xml:space="preserve"
+        version="1.1"
+        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+        viewBox="0 0 784.11 815.53"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs></defs>
+        <g id="Layer_x0020_1">
+          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+          <path
+            class="fil0"
+            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+    <div class="star-6">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xml:space="preserve"
+        version="1.1"
+        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+        viewBox="0 0 784.11 815.53"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <defs></defs>
+        <g id="Layer_x0020_1">
+          <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+          <path
+            class="fil0"
+            d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+          ></path>
+        </g>
+      </svg>
+    </div>
+  </button>
+</section>
+
+
+<!-- Partner section -->
+<section class="partner-section d-flex align-items-start">
+    <div class="container text-center">
+      <span class="partner-heading-text">
+        Olympiad Organizers
+      </span>
+      <div class="row pt-5 mt-5 d-flex justify-content-center">
+        <div class="col-sm-4 d-flex justify-content-center">
+          <div class="partner-box d-flex justify-content-center align-items-center flex-column">
+            <a href="https://t.me/pipipupu_iiiict" class="partner-logo" target="__blank"><img src="Media\IERiII.jpg" class="partner-img" alt="IERiII"></a>
+            <span class="partner-name pt-3 Russian">IERiII</span>
+          </div>
+        </div>
+        <div class="col-sm-4 d-flex justify-content-center">
+          <div class="partner-box d-flex justify-content-center align-items-center flex-column">
+            <a href="https://t.me/abiturient_kbgu" class="partner-logo" target="__blank"><img src="Media\udppr.gif" class="partner-img" alt="UDPPR"></a>
+            <span class="partner-name pt-3 Russian">UDPPR</span>
+          </div>
+        </div>
+        <div class="col-sm-4 d-flex justify-content-center">
+          <div class="partner-box d-flex justify-content-center align-items-center flex-column">
+            <a href="https://t.me/xAlenki" class="partner-logo" target="__blank">
+              <!-- <img src="Media\three.gif" class="partner-img" alt="KARAF"> -->
+              <video autoplay loop muted poster="KARAF">
+                <source src="Media\karaf.mp4" type="video/mp4">
+              </video>
+            </a>
+            <span class="partner-name pt-3 Russian">KARAF</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="custom-footer">
+  <h1 class="main-heading-text">GOOD LUCK!</h1>
+  <div style="height: 57vh;" class="d-flex justify-content-center align-items-center text-center">
+     <h2>
+      <span href="" class="typewrite" data-period="2000" data-type='[ "Coming soon...", "Made by KARAF" ]'>
+        <span class="typewrite-text-wrap"></span>
+      </span>
+     </h2>
+  </div>
+</section>
+
+  <!-- Contacts Modal -->
+  <div class="modal fade bd-example-modal-lg" id="contactsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="custom-modal-content modal-content">
+        <div class="custom-modal-header modal-header">
+            <h2 class="custom-modal-title modal-title fs-5" id="enrollLabel">Contacts</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+        </div>
+        <div class="modal-body">
+          <span class="contact-modal-text Russian">
+            KARAF: <br>
+            +7 (928) 691-26-02 <br>
+            okaraf07@gmail.com <br>
+            Telegram: @xAlenki <br>
+            <br>
+            IERiII: <br>
+            8 (8662) 40-48-06 <br>
+            iieir@kbsu.ru <br>
+            Telegram: @pipipupu_iiiict<br>
+            <br>
+            UDPPR <br>
+            +7 (8662) 72-20-24 <br>
+            udppr@mail.ru <br>
+            Telegram: @abiturient_kbgu <br>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration Modal -->
+  <div class="modal fade bd-example-modal-lg" data-lenis-prevent id="registerModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content custom-modal-content">
+        <div class="modal-header custom-modal-header">
+            <h2 class="modal-title custom-modal-title fs-5" id="enrollLabel">PLAY</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body custom-registration-modal-body">
+          <!-- Форма -->
+          <form id="form">
+            <div class="mb-3">
+              <label for="Название команды" class="col-form-label Russian">Team name:</label>
+              <input type="text" class="custom-form-control form-control reqField" name="Название команды" id="Название команды">
+            </div>
+            <div class="mb-3">
+                <label for="ФИО Капитана" class="col-form-label Russian">Captain's full name:</label>
+                <input type="text" class="custom-form-control form-control reqField" name="ФИО Капитана" id="ФИО Капитана">
+            </div>
+            <div class="mb-3">
+                <label for="Номер телефона Капитана" class="col-form-label Russian">Captain's phone number:</label>
+                <input type="text" class="custom-form-control form-control reqField" name="Номер телефона Капитана" id="Номер телефона Капитана">
+            </div>
+            <div class="mb-3">
+              <label for="Телеграм ID Капитана" class="col-form-label Russian">Captain's Telegram ID:<br><span style="font-size: 0.8rem;">(you can get it with this bot @getmyid_bot)</span></label>
+              <input type="text" class="custom-form-control form-control reqField" name="Телеграм ID Капитана" id="Телеграм ID Капитана">
+            </div>
+            <div class="mb-3">
+              <label for="Телеграм ник Капитана" class="col-form-label Russian">Captain's Telegram Username:<br><span style="font-size: 0.8rem;">(if there is one)</span></label>
+              <input type="text" class="custom-form-control form-control" name="Телеграм ник Капитана" id="Телеграм ник Капитана">
+            </div>
+            <div class="mb-3">
+              <label for="ФИО игроков команды" class="col-form-label Russian">Full names of the team players:<br><span style="font-size: 0.8rem;">(3-5 players)</span></label>
+              <textarea class="textarea-form-control custom-form-control form-control reqField" name="ФИО игроков команды" id="ФИО игроков команды"></textarea>
+            </div>
+            <span class="col-form-label Russian">Select the institution that the team represents: </span>
+            <select class="form-select custom-form-select" aria-label="Default select example" name="Институт" id="Институт">
+              <option selected value="ИЭРиИИ">IERIII</option>
+              <option value="ИМиЕН">IMIEN</option>
+              <option value="ИМТиИГ">IMTIIG</option>
+              <option value="ИСиЧЛХ">ISICHLX</option>
+              <option value="ИАСиД">IASID</option>
+              <option value="СГИ">SGI</option>
+              <option value="ИППиФСО">IPPIFSO</option>
+              <option value="ИПЭиФ">IPEIF</option>
+              <option value="ВШМО">HSIE</option>
+            </select>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn custom-submit disabled" id="submit" aria-disabled="true" tabindex="-1"><span class="submit-text">Продолжить</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- GSAP -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- Custom JavaScript -->
+<script type="module" src="js/script.js"></script>
+<script type="module" src="js/form.js"></script>
+<script type="module" src="js/gsap_scroll.js"></script>
+<script type="module" src="js/typewrite_effect.js"></script>
+</body>
+</html>

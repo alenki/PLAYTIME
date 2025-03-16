@@ -26,13 +26,13 @@ document.querySelector(".contact-main-button").addEventListener('click', () => {
 
 // Language
 document.querySelector(".language-button").addEventListener('click', () => {
-    location.reload();
+    window.location.href = "en/index.html"; 
 });
 document.querySelector(".language-mobile-button").addEventListener('click', () => {
-    location.reload();
+    window.location.href = "en/index.html"; 
 });
 document.querySelector(".language-mobile3-button").addEventListener('click', () => {
-    location.reload();
+    window.location.href = "en/index.html"; 
 });
 
 // Register button
