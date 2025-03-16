@@ -1,3 +1,7 @@
+[[redirects]]
+  from = "/en"
+  to = "/en/english.html"
+  status = 200
 
 [[redirects]]
   from = "/*"
