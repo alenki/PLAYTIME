@@ -32,6 +32,10 @@ html, body {
     overflow-x: initial !important;
     background: var(--white);
 }
+/* body.modal-open {
+  overflow: hidden;
+  position: fixed;
+} */
 .Retro {
   font-family: Retro;
   transform: scaleY(1);
@@ -40,6 +44,7 @@ html, body {
   font-family: Joystix;
   transform: scaleY(1.13);
 }
+
 /* --------------- End of Body ---------------- */
 
 /* --------------- Background ---------------- */
@@ -624,7 +629,7 @@ h1 {
 }
 .partner-box {
   width: 95vw;
-  height: 30vw;
+  height: 25vw;
 
   z-index: 10;
 	position: relative;
@@ -715,9 +720,8 @@ h1 {
 }
 .col-form-label {
   color: #FFD166;
-  font-size: 0.3rem;
 }
-.form-control {
+.custom-form-control {
   height: 3rem !important;
   border: 2.5px solid rgba(255, 255, 255, 0.43) !important;
   box-shadow: 0 0 0 var(--secondary) !important;
@@ -726,6 +730,9 @@ h1 {
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1) !important;
   backdrop-filter: blur(7.3px) !important;
   -webkit-backdrop-filter: blur(7.3px) !important;
+}
+.textarea-form-control {
+  height: 9rem !important;
 }
 .custom-form-select {
   height: 3rem !important;
