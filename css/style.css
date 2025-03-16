@@ -946,7 +946,15 @@ h1 {
 }
 /* --------------- End of Register Button ---------------- */
 
-/* --------------- footer text ---------------- */
+/* --------------- footer ---------------- */
+.custom-footer {
+  height: 100vh;
+}
+@media only screen and (max-width: 500px) {
+  .custom-footer{
+    height: 87vh;
+  }
+}
 .typewrite-text-wrap {
   font-size: 2.1rem;
   color: var(--primary);
@@ -954,13 +962,7 @@ h1 {
   z-index: 10;
 	position: relative;
 }
-.footer-end {
-  height: 10.7vh;
-  padding-right: 69px;
-  z-index: 10;
-	position: relative;
-}
-/* --------------- End of footer text ---------------- */
+/* --------------- End of footer ---------------- */
 
 /* --------------- Contacts Modal ---------------- */
 .custom-modal-content {
