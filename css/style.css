@@ -566,6 +566,39 @@ h1 {
   color: var(--primary);
   font-family: Joystix;
 }
+.scroll-text-mobile_content {
+  display: none;
+}
+.scroll-text-large_content {
+  display: block;
+}
+@media only screen and (max-width: 1250px) {
+  .content__title{
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 883px) {
+  .content__title{
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .content__title{
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .content__title{
+    font-size: 1rem;
+  }
+  .scroll-text-large_content{
+    display: none;
+  }
+  .scroll-text-mobile_content{
+    display: block;
+  }
+}
+
 /* --------------- End of scrolltrigger text ---------------- */
 
 /* --------------- Partners ---------------- */
@@ -637,6 +670,17 @@ h1 {
 .letsplay {
   padding-bottom: 5rem;
 }
+@media only screen and (max-width: 400px) {
+  .letsplay{
+    padding-bottom: 1.7rem;
+    font-size: 19vw;
+  }
+}
+@media only screen and (max-width: 285px) {
+  .letsplay{
+    padding-bottom: 1.7rem;
+  }
+}
 .col-form-label {
   color: #FFD166;
   font-size: 0.3rem;
@@ -702,8 +746,8 @@ h1 {
 /* --------------- Registration Button ---------------- */
 .register-button {
   position: relative;
-  padding: 12px 35px;
-  width: 19rem;
+  padding: 12px;
+  width: 50vw;
   height: 5rem;
   font-size: 1.5rem;
   font-weight: 500;
@@ -720,6 +764,17 @@ h1 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.3px);
   -webkit-backdrop-filter: blur(7.3px);
+}
+@media only screen and (max-width: 375px) {
+  .register-button {
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 285px) {
+  .register-button {
+    height: 4rem;
+    width: 75%;
+  }
 }
 .star-1 {
   position: absolute;
