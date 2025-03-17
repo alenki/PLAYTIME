@@ -42,11 +42,3 @@ document.querySelector(".register-button").addEventListener('click', () => {
     })
     modal.toggle()
 })
-
-
-//background video
-const video = document.querySelector('video');
-video.addEventListener('ended', function () {
-    video.currentTime = 0; // Reset the video to the start
-    video.play(); // Play the video again
-});
