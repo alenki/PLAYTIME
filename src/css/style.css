@@ -63,7 +63,7 @@ html, body {
   bottom: 0;
   z-index: 0;
 }
-@media only screen and (max-width: 737) {
+@media only screen and (max-width: 737px) {
   #background-video {
     width: 233vw;
   }
