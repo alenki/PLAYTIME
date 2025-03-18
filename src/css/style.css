@@ -638,7 +638,7 @@ h1 {
 }
 .partner-box {
   width: 27vw;
-  height: 29vw;
+  height: 27vw;
 
   z-index: 10;
 	position: relative;
@@ -657,6 +657,10 @@ h1 {
   transition: transform .3s;
 }
 @media only screen and (max-width: 1300px) {
+  .partner-box {
+    width: 27vw;
+    height: 29vw;
+  }
   .partner-logo {
     width: 16vw;
     height: 16vw;
@@ -687,7 +691,7 @@ h1 {
     height: 35vw;
   }
 }
-.partner-logo img {
+.partner-img  {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -714,8 +718,73 @@ h1 {
 
 /* --------------- KARAF modal ---------------- */
 .custom-karaf-modal-dialog {
-  max-width: 600px !important;
-  width: 600px !important;
+  max-width: 611px !important;
+  width: 611px !important;
+}
+.karaf-modal-body {
+  height: 37vh;
+}
+.karaf-partner-box {
+  width: 100%;
+  height: 100%;
+
+  z-index: 10;
+	position: relative;
+
+  border-radius: 30px;
+  background: rgba(239, 71, 111, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  object-fit: cover;
+}
+.karaf-partner-logo {
+  background-color: black;
+  width: 63%;
+  height: 63%;
+  border-radius: 30px;
+  transition: transform .3s;
+  object-fit: cover;
+}
+.karaf-wrapper {
+  height: 100%;
+  display: flex;
+}
+@media only screen and (max-width: 615px) {
+  .custom-karaf-modal-dialog {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .karaf-modal-body {
+    height: 61vw;
+  }
+  .karaf-partner-box {
+    width: 100%;
+    height: 51vw;;
+  }
+}
+@media only screen and (max-width: 407px) {
+  .karaf-wrapper {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .karaf-modal-body {
+    height: 133vw;
+  }
+  .karaf-partner-box {
+    width: 57vw;
+    height: 55vw;
+  }
+  .custom-karaf-modal-dialog {
+    max-width: 96% !important;
+    width: 96% !important;
+  }
+  .karaf-partner-name {
+    font-size: 5vw;
+  }
 }
 /* --------------- End of KARAF modal ---------------- */
 
