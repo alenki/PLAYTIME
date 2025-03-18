@@ -44,3 +44,10 @@ document.querySelector(".register-button").addEventListener('click', () => {
 })
 
 
+// KARAF button
+document.querySelector(".karaf-partner-box").addEventListener('click', () => {
+    var modal = new bootstrap.Modal(document.getElementById('karafModal'), {
+        keyboard: false
+    })
+    modal.toggle()
+});
