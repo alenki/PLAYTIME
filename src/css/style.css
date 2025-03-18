@@ -637,8 +637,8 @@ h1 {
   padding-bottom: 50rem;
 }
 .partner-box {
-  width: 95vw;
-  height: 25vw;
+  width: 27vw;
+  height: 29vw;
 
   z-index: 10;
 	position: relative;
@@ -711,6 +711,13 @@ h1 {
   color: var(--primary);
 }
 /* --------------- End of Partners ---------------- */
+
+/* --------------- KARAF modal ---------------- */
+.custom-karaf-modal-dialog {
+  max-width: 600px !important;
+  width: 600px !important;
+}
+/* --------------- End of KARAF modal ---------------- */
 
 /* --------------- Registration ---------------- */
 .registration-button {
