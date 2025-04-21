@@ -651,8 +651,8 @@ h1 {
 }
 .partner-logo {
   background-color: black;
-  width: 63%;
-  height: 63%;
+  width: 240px;
+  height: 240px;
   border-radius: 30px;
   transition: transform .3s;
 }
